@@ -1,42 +1,42 @@
-[API REQUEST] GET /api/admin/cities null
+Tracking Prevention blocked access to storage for https://cdn.jsdelivr.net/npm/chart.js.
+admin.html:1 Tracking Prevention blocked access to storage for https://cdn.jsdelivr.net/npm/chart.js.
+admin.html:1 Tracking Prevention blocked access to storage for https://cdn.jsdelivr.net/npm/chart.js.
+admin.html:1 Tracking Prevention blocked access to storage for https://cdn.jsdelivr.net/npm/chart.js.
+admin.js:57 [API REQUEST] GET /api/admin/cities null
 admin.js:57 [API REQUEST] GET /api/admin/movies null
 admin.js:57 [API REQUEST] GET /api/admin/theatres null
 admin.js:57 [API REQUEST] GET /api/admin/shows?scope=upcoming null
 admin.js:66 [API RESPONSE STATUS] 200 
 admin.js:75 [API RESPONSE BODY] Object
 2admin.js:66 [API RESPONSE STATUS] 200 
-favicon.ico:1  Failed to load resource: the server responded with a status of 404 ()
+admin.js:75 [API RESPONSE BODY] Object
+admin.js:75 [API RESPONSE BODY] Object
 admin.js:66 [API RESPONSE STATUS] 200 
 admin.js:75 [API RESPONSE BODY] Object
-admin.js:75 [API RESPONSE BODY] Object
-admin.js:75 [API RESPONSE BODY] Object
-api/admin/analytics/revenue/breakdown?dimension=movie?dateFrom=2026-08-04&dateTo=2026-09-03:1  Failed to load resource: the server responded with a status of 500 ()
-analytics.js:164 [ANALYTICS] /revenue/breakdown?dimension=movie returned HTTP 500
-analyticsApiCall @ analytics.js:164
-api/admin/analytics/movies?dateFrom=2026-08-04&dateTo=2026-09-03:1  Failed to load resource: the server responded with a status of 500 ()
-analytics.js:164 [ANALYTICS] /movies returned HTTP 500
-analyticsApiCall @ analytics.js:164
-api/admin/analytics/revenue?granularity=daily?dateFrom=2026-08-04&dateTo=2026-09-03:1  Failed to load resource: the server responded with a status of 500 ()
-analytics.js:164 [ANALYTICS] /revenue?granularity=daily returned HTTP 500
-analyticsApiCall @ analytics.js:164
+analytics.js:174 [ANALYTICS] /revenue?granularity=daily OK Object
 api/admin/analytics/theatres?dateFrom=2026-08-04&dateTo=2026-09-03:1  Failed to load resource: the server responded with a status of 500 ()
-analytics.js:164 [ANALYTICS] /theatres returned HTTP 500
-analyticsApiCall @ analytics.js:164
+analytics.js:165 [ANALYTICS] /theatres returned HTTP 500
+analyticsApiCall @ analytics.js:165
+api/admin/analytics/movies?dateFrom=2026-08-04&dateTo=2026-09-03:1  Failed to load resource: the server responded with a status of 500 ()
+analytics.js:165 [ANALYTICS] /movies returned HTTP 500
+analyticsApiCall @ analytics.js:165
 api/admin/analytics/screens?dateFrom=2026-08-04&dateTo=2026-09-03:1  Failed to load resource: the server responded with a status of 500 ()
-analytics.js:164 [ANALYTICS] /screens returned HTTP 500
-analyticsApiCall @ analytics.js:164
-analytics.js:173 [ANALYTICS] /dashboard OK Object
-api/admin/analytics/dayofweek?dateFrom=2026-08-04&dateTo=2026-09-03:1  Failed to load resource: the server responded with a status of 500 ()
-analytics.js:164 [ANALYTICS] /dayofweek returned HTTP 500
-analyticsApiCall @ analytics.js:164
-api/admin/analytics/timeslots?dateFrom=2026-08-04&dateTo=2026-09-03:1  Failed to load resource: the server responded with a status of 500 ()
-analytics.js:164 [ANALYTICS] /timeslots returned HTTP 500
-analyticsApiCall @ analytics.js:164
+analytics.js:165 [ANALYTICS] /screens returned HTTP 500
+analyticsApiCall @ analytics.js:165
 api/admin/analytics/shows?dateFrom=2026-08-04&dateTo=2026-09-03:1  Failed to load resource: the server responded with a status of 500 ()
-analytics.js:164 [ANALYTICS] /shows returned HTTP 500
-analyticsApiCall @ analytics.js:164
-api/admin/analytics/languages?dateFrom=2026-08-04&dateTo=2026-09-03:1  Failed to load resource: the server responded with a status of 500 ()
-analytics.js:164 [ANALYTICS] /languages returned HTTP 500
-analyticsApiCall @ analytics.js:164
+analytics.js:165 [ANALYTICS] /shows returned HTTP 500
+analyticsApiCall @ analytics.js:165
+api/admin/analytics/timeslots?dateFrom=2026-08-04&dateTo=2026-09-03:1  Failed to load resource: the server responded with a status of 500 ()
+analytics.js:165 [ANALYTICS] /timeslots returned HTTP 500
+analyticsApiCall @ analytics.js:165
 api/admin/analytics/formats?dateFrom=2026-08-04&dateTo=2026-09-03:1  Failed to load resource: the server responded with a status of 500 ()
-analytics.js:164 [ANALYTICS] /formats returned HTTP 500
+analytics.js:165 [ANALYTICS] /formats returned HTTP 500
+analyticsApiCall @ analytics.js:165
+api/admin/analytics/dayofweek?dateFrom=2026-08-04&dateTo=2026-09-03:1  Failed to load resource: the server responded with a status of 500 ()
+analytics.js:165 [ANALYTICS] /dayofweek returned HTTP 500
+analyticsApiCall @ analytics.js:165
+api/admin/analytics/languages?dateFrom=2026-08-04&dateTo=2026-09-03:1  Failed to load resource: the server responded with a status of 500 ()
+analytics.js:165 [ANALYTICS] /languages returned HTTP 500
+analyticsApiCall @ analytics.js:165
+analytics.js:174 [ANALYTICS] /dashboard OK Object
+analytics.js:174 [ANALYTICS] /revenue/breakdown?dimension=movie OK Object
