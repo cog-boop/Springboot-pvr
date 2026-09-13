@@ -1,71 +1,17 @@
-[2m2026-09-13T13:56:44.913+05:30[0;39m [32m INFO[0;39m [35m14676[0;39m [2m--- [movie-booking] [nio-8080-exec-1] [0;39m[36mc.m.stream.controller.StreamController  [0;39m [2m:[0;39m Client connecting to seat update stream for show 31
-[2m2026-09-13T13:56:44.913+05:30[0;39m [32mDEBUG[0;39m [35m14676[0;39m [2m--- [movie-booking] [nio-8080-exec-1] [0;39m[36mc.m.stream.controller.StreamController  [0;39m [2m:[0;39m Client subscribed to show 31 seat updates
-[2m2026-09-13T13:56:44.913+05:30[0;39m [32m INFO[0;39m [35m14676[0;39m [2m--- [movie-booking] [nio-8080-exec-1] [0;39m[36mc.m.stream.controller.StreamController  [0;39m [2m:[0;39m Seat update stream completed for show 31
-[2m2026-09-13T13:56:44.916+05:30[0;39m [33m WARN[0;39m [35m14676[0;39m [2m--- [movie-booking] [nio-8080-exec-1] [0;39m[36mo.apache.catalina.core.AsyncContextImpl [0;39m [2m:[0;39m onError() call failed for listener of type [org.apache.catalina.core.AsyncListenerWrapper]
-
-java.lang.NullPointerException: Cannot invoke "java.lang.Throwable.getMessage()" because the return value of "org.springframework.core.NestedExceptionUtils.getMostSpecificCause(java.lang.Throwable)" is null
-	at org.springframework.web.util.DisconnectedClientHelper.isClientDisconnectedException(DisconnectedClientHelper.java:120) ~[spring-web-6.2.3.jar:6.2.3]
-	at org.springframework.web.context.request.async.WebAsyncManager.lambda$startDeferredResultProcessing$6(WebAsyncManager.java:450) ~[spring-web-6.2.3.jar:6.2.3]
-	at org.springframework.web.context.request.async.StandardServletAsyncWebRequest.lambda$onError$0(StandardServletAsyncWebRequest.java:195) ~[spring-web-6.2.3.jar:6.2.3]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
-	at org.springframework.web.context.request.async.StandardServletAsyncWebRequest.onError(StandardServletAsyncWebRequest.java:195) ~[spring-web-6.2.3.jar:6.2.3]
-	at org.apache.catalina.core.AsyncListenerWrapper.fireOnError(AsyncListenerWrapper.java:49) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.catalina.core.AsyncContextImpl.setErrorState(AsyncContextImpl.java:415) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.catalina.connector.CoyoteAdapter.asyncDispatch(CoyoteAdapter.java:242) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.coyote.AbstractProcessor.dispatch(AbstractProcessor.java:243) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
-
-[2m2026-09-13T13:56:45.928+05:30[0;39m [32m INFO[0;39m [35m14676[0;39m [2m--- [movie-booking] [nio-8080-exec-3] [0;39m[36mc.m.stream.controller.StreamController  [0;39m [2m:[0;39m Client connecting to seat update stream for show 31
-[2m2026-09-13T13:56:45.928+05:30[0;39m [32mDEBUG[0;39m [35m14676[0;39m [2m--- [movie-booking] [nio-8080-exec-3] [0;39m[36mc.m.stream.controller.StreamController  [0;39m [2m:[0;39m Client subscribed to show 31 seat updates
-[2m2026-09-13T13:56:45.928+05:30[0;39m [32m INFO[0;39m [35m14676[0;39m [2m--- [movie-booking] [nio-8080-exec-3] [0;39m[36mc.m.stream.controller.StreamController  [0;39m [2m:[0;39m Seat update stream completed for show 31
-[2m2026-09-13T13:56:45.930+05:30[0;39m [33m WARN[0;39m [35m14676[0;39m [2m--- [movie-booking] [nio-8080-exec-3] [0;39m[36mo.apache.catalina.core.AsyncContextImpl [0;39m [2m:[0;39m onError() call failed for listener of type [org.apache.catalina.core.AsyncListenerWrapper]
-
-java.lang.NullPointerException: Cannot invoke "java.lang.Throwable.getMessage()" because the return value of "org.springframework.core.NestedExceptionUtils.getMostSpecificCause(java.lang.Throwable)" is null
-	at org.springframework.web.util.DisconnectedClientHelper.isClientDisconnectedException(DisconnectedClientHelper.java:120) ~[spring-web-6.2.3.jar:6.2.3]
-	at org.springframework.web.context.request.async.WebAsyncManager.lambda$startDeferredResultProcessing$6(WebAsyncManager.java:450) ~[spring-web-6.2.3.jar:6.2.3]
-	at org.springframework.web.context.request.async.StandardServletAsyncWebRequest.lambda$onError$0(StandardServletAsyncWebRequest.java:195) ~[spring-web-6.2.3.jar:6.2.3]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
-	at org.springframework.web.context.request.async.StandardServletAsyncWebRequest.onError(StandardServletAsyncWebRequest.java:195) ~[spring-web-6.2.3.jar:6.2.3]
-	at org.apache.catalina.core.AsyncListenerWrapper.fireOnError(AsyncListenerWrapper.java:49) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.catalina.core.AsyncContextImpl.setErrorState(AsyncContextImpl.java:415) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.catalina.connector.CoyoteAdapter.asyncDispatch(CoyoteAdapter.java:242) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.coyote.AbstractProcessor.dispatch(AbstractProcessor.java:243) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
-
-[2m2026-09-13T13:56:46.950+05:30[0;39m [32m INFO[0;39m [35m14676[0;39m [2m--- [movie-booking] [nio-8080-exec-5] [0;39m[36mc.m.stream.controller.StreamController  [0;39m [2m:[0;39m Client connecting to seat update stream for show 31
-[2m2026-09-13T13:56:46.950+05:30[0;39m [32mDEBUG[0;39m [35m14676[0;39m [2m--- [movie-booking] [nio-8080-exec-5] [0;39m[36mc.m.stream.controller.StreamController  [0;39m [2m:[0;39m Client subscribed to show 31 seat updates
-[2m2026-09-13T13:56:46.950+05:30[0;39m [32m INFO[0;39m [35m14676[0;39m [2m--- [movie-booking] [nio-8080-exec-5] [0;39m[36mc.m.stream.controller.StreamController  [0;39m [2m:[0;39m Seat update stream completed for show 31
-[2m2026-09-13T13:56:46.952+05:30[0;39m [33m WARN[0;39m [35m14676[0;39m [2m--- [movie-booking] [nio-8080-exec-5] [0;39m[36mo.apache.catalina.core.AsyncContextImpl [0;39m [2m:[0;39m onError() call failed for listener of type [org.apache.catalina.core.AsyncListenerWrapper]
-
-java.lang.NullPointerException: Cannot invoke "java.lang.Throwable.getMessage()" because the return value of "org.springframework.core.NestedExceptionUtils.getMostSpecificCause(java.lang.Throwable)" is null
-	at org.springframework.web.util.DisconnectedClientHelper.isClientDisconnectedException(DisconnectedClientHelper.java:120) ~[spring-web-6.2.3.jar:6.2.3]
-	at org.springframework.web.context.request.async.WebAsyncManager.lambda$startDeferredResultProcessing$6(WebAsyncManager.java:450) ~[spring-web-6.2.3.jar:6.2.3]
-	at org.springframework.web.context.request.async.StandardServletAsyncWebRequest.lambda$onError$0(StandardServletAsyncWebRequest.java:195) ~[spring-web-6.2.3.jar:6.2.3]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
-	at org.springframework.web.context.request.async.StandardServletAsyncWebRequest.onError(StandardServletAsyncWebRequest.java:195) ~[spring-web-6.2.3.jar:6.2.3]
-	at org.apache.catalina.core.AsyncListenerWrapper.fireOnError(AsyncListenerWrapper.java:49) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.catalina.core.AsyncContextImpl.setErrorState(AsyncContextImpl.java:415) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.catalina.connector.CoyoteAdapter.asyncDispatch(CoyoteAdapter.java:242) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.coyote.AbstractProcessor.dispatch(AbstractProcessor.java:243) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+[ANALYTICS] /revenue/breakdown?dimension=movie OK Object
+analytics.js:175 [ANALYTICS] /languages OK Object
+analytics.js:175 [ANALYTICS] /formats OK Object
+analytics.js:175 [ANALYTICS] /timeslots OK Object
+analytics.js:175 [ANALYTICS] /dayofweek OK Object
+analytics.js:175 [ANALYTICS] /shows OK Object
+api/admin/operations/shows?scope=all:1  Failed to load resource: the server responded with a status of 404 ()
+api/admin/operations/theatres:1  Failed to load resource: the server responded with a status of 404 ()
+operations.js:125 Failed to load theatres: Error: Resource not found
+    at opsApiCall (operations.js:73:15)
+    at async opsLoadTheatresDropdown (operations.js:108:24)
+opsLoadTheatresDropdown @ operations.js:125
+operations.js:102 Failed to load shows: Error: Resource not found
+    at opsApiCall (operations.js:73:15)
+    at async opsLoadShowsDropdown (operations.js:83:24)
+opsLoadShowsDropdown @ operations.js:102
+analytics.js:175 [ANALYTICS] /movies OK Object
