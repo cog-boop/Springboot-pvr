@@ -1,24 +1,24 @@
-2026-09-14T01:03:52.804+05:30 [39mDEBUG[0;39m c.m.c.e.GlobalExceptionHandler : Static resource not found: No static resource favicon.ico.
-2026-09-14T01:05:24.887+05:30 [31mWARN [0;39m o.h.e.j.s.SqlExceptionHelper : SQL Error: 1064, SQLState: 42000
-2026-09-14T01:05:24.888+05:30 [1;31mERROR[0;39m o.h.e.j.s.SqlExceptionHelper : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BY m.title' at line 8
-2026-09-14T01:05:24.895+05:30 [1;31mERROR[0;39m c.m.c.e.GlobalExceptionHandler : Unhandled exception: JDBC exception executing SQL [SELECT DISTINCT m.id, m.title
-FROM movies m
-JOIN shows s ON s.movie_id = m.id
-JOIN screens scr ON s.screen_id = scr.id
-JOIN theatres t ON scr.theatre_id = t.id
-WHERE m.is_deleted = false AND s.is_deleted = false
-  AND scr.is_deleted = false AND t.is_deleted = false
- AND t.id = 1ORDER BY m.title
-] [You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BY m.title' at line 8] [n/a]; SQL [n/a]
-org.springframework.dao.InvalidDataAccessResourceUsageException: JDBC exception executing SQL [SELECT DISTINCT m.id, m.title
-FROM movies m
-JOIN shows s ON s.movie_id = m.id
-JOIN screens scr ON s.screen_id = scr.id
-JOIN theatres t ON scr.theatre_id = t.id
-WHERE m.is_deleted = false AND s.is_deleted = false
-  AND scr.is_deleted = false AND t.is_deleted = false
- AND t.id = 1ORDER BY m.title
-] [You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BY m.title' at line 8] [n/a]; SQL [n/a]
+2026-09-24T19:18:14.942+05:30 [34mINFO [0;39m o.s.w.s.DispatcherServlet : Completed initialization in 2 ms
+2026-09-24T19:18:47.767+05:30 [31mWARN [0;39m o.h.e.j.s.SqlExceptionHelper : SQL Error: 1064, SQLState: 42000
+2026-09-24T19:18:47.767+05:30 [1;31mERROR[0;39m o.h.e.j.s.SqlExceptionHelper : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BY c.name' at line 8
+2026-09-24T19:18:47.781+05:30 [1;31mERROR[0;39m c.m.c.e.GlobalExceptionHandler : Unhandled exception: JDBC exception executing SQL [SELECT DISTINCT c.id, c.name
+FROM cities c
+JOIN theatres t ON t.city_id = c.id
+JOIN screens scr ON scr.theatre_id = t.id
+JOIN shows s ON s.screen_id = scr.id
+WHERE c.is_deleted = false AND t.is_deleted = false
+  AND scr.is_deleted = false AND s.is_deleted = false
+ AND t.id = 1ORDER BY c.name
+] [You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BY c.name' at line 8] [n/a]; SQL [n/a]
+org.springframework.dao.InvalidDataAccessResourceUsageException: JDBC exception executing SQL [SELECT DISTINCT c.id, c.name
+FROM cities c
+JOIN theatres t ON t.city_id = c.id
+JOIN screens scr ON scr.theatre_id = t.id
+JOIN shows s ON s.screen_id = scr.id
+WHERE c.is_deleted = false AND t.is_deleted = false
+  AND scr.is_deleted = false AND s.is_deleted = false
+ AND t.id = 1ORDER BY c.name
+] [You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BY c.name' at line 8] [n/a]; SQL [n/a]
 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:277)
 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:560)
@@ -138,15 +138,15 @@ WHERE m.is_deleted = false AND s.is_deleted = false
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.hibernate.exception.SQLGrammarException: JDBC exception executing SQL [SELECT DISTINCT m.id, m.title
-FROM movies m
-JOIN shows s ON s.movie_id = m.id
-JOIN screens scr ON s.screen_id = scr.id
-JOIN theatres t ON scr.theatre_id = t.id
-WHERE m.is_deleted = false AND s.is_deleted = false
-  AND scr.is_deleted = false AND t.is_deleted = false
- AND t.id = 1ORDER BY m.title
-] [You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BY m.title' at line 8] [n/a]
+Caused by: org.hibernate.exception.SQLGrammarException: JDBC exception executing SQL [SELECT DISTINCT c.id, c.name
+FROM cities c
+JOIN theatres t ON t.city_id = c.id
+JOIN screens scr ON scr.theatre_id = t.id
+JOIN shows s ON s.screen_id = scr.id
+WHERE c.is_deleted = false AND t.is_deleted = false
+  AND scr.is_deleted = false AND s.is_deleted = false
+ AND t.id = 1ORDER BY c.name
+] [You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BY c.name' at line 8] [n/a]
 	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:66)
 	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
 	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
@@ -167,7 +167,7 @@ WHERE m.is_deleted = false AND s.is_deleted = false
 	at org.hibernate.query.sql.internal.NativeQueryImpl.doList(NativeQueryImpl.java:693)
 	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:143)
 	at org.hibernate.query.Query.getResultList(Query.java:120)
-	at com.moviebooking.analytics.repository.AnalyticsRepository.getFilterOptions(AnalyticsRepository.java:708)
+	at com.moviebooking.analytics.repository.AnalyticsRepository.getFilterOptions(AnalyticsRepository.java:754)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
@@ -175,7 +175,7 @@ WHERE m.is_deleted = false AND s.is_deleted = false
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
 	... 113 common frames omitted
-Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BY m.title' at line 8
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BY c.name' at line 8
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
 	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
